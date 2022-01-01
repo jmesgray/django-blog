@@ -1,0 +1,55 @@
+{% extends 'base.html' %} <!-- this imports the base.html file. You can also write a file path. -->
+<!-- If you do write a file path you need to go to the project-wide settings.py file and go to templates and add BASE_DIR / "templates". -->
+<!-- This instructs django to find the global templates folder. this enables the extends function. -->
+{% load static %}
+
+{% block title %}
+ My Blog (Home/Starting Page)
+{% endblock %} <!-- This content will appear in the browser of the starting_page -->
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}" />
+{% endblock %}
+
+{% block content %}
+    <header id="main-navigation"> <!-- will also be used for styling -->
+        <h1><a href="">Jae's Blog</a></h1> <!-- This link will take you back to the starting page for each blog page -->
+        <nav>
+            <a href="">All Posts</a> <!-- Link to all posts -->
+        </nav>
+    </header>
+
+    <section id="welcome">
+        <header>
+            <img src="" alt="Jae - The Author of this Blog" />
+            <h2>JAE'S BLOG</h2>
+        </header>
+    <p>Hi, I am Jae and I love to develop backend software</p>
+    </section> <!-- this will be used for styling -->
+
+    <section id="latest-posts">
+    <h2>My Latest Thoughts</h2>
+
+    <u1>
+        <li>
+            <article class="post">
+                <a href="">
+                    <img src="" alt="Mountain Hiking"/>
+                    <div class="post__content">
+                        <h3>Mountain Hiking</h3>
+                        <p>There's nothing like the views you get when hiking in the mountains. Click bait :)
+                        </p>
+                    </div>
+                </a>
+            </article>
+        </li>
+    </u1>
+    </section>
+
+    <section id="about">
+    <h2>What I Do</h2>
+    <p>I love developing. I love to create web applications and software.</p>
+    <p>
+        I want to eventually create containers in the cloud. I want to help businesses build, maintain, and migrate onto cloud platforms.
+    </p>
+    </section>
+{% endblock %}
