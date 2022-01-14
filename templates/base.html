@@ -6,7 +6,7 @@
     <title>{% block title %}{% endblock %}</title> <!-- the block will allow templates inheritance to plug in their own title -->
    <link rel="stylesheet" href="{% static "app.css" %}">
 
-    {% block css_files %}{% endblock %} <!-- will allow css file imports in this base template -->
+    {% block css_files %}{% endblock %} <!-- allows css file imports in this base template -->
 </head>
 <body>
     {% block content %}
