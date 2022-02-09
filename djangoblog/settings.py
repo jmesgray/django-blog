@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'djangoblog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / '', # need to add in your global static file here. this is where you left off
+        'NAME': BASE_DIR / '', # need to add in your global static file here. left off here
     }
 }
 
