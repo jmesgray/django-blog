@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'blog',  # making django aware of blog app that we created
+    'blog',  # making django aware of blog app that was created
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
