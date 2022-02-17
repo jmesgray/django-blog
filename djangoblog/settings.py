@@ -53,7 +53,7 @@ ROOT_URLCONF = 'djangoblog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates"],  # this line is already done for you, unlike vs code.
+        'DIRS': [BASE_DIR / "templates"],  # this line is already done, unlike vs code.
         # this enables django to find your global templates file
         'APP_DIRS': True,
         'OPTIONS': {
