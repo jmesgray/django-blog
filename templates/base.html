@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}{% endblock %}</title> <!-- the block will allow templates inheritance to plug in their own title -->
+    <title>{% block title %}{% endblock %}</title> <!-- the block allows templates inheritance to plug in their own title -->
    <link rel="stylesheet" href="{% static "app.css" %}">
 
     {% block css_files %}{% endblock %} <!-- css file imports in this base template -->
