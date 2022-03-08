@@ -54,7 +54,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [BASE_DIR / "templates"],  # this line is already done, unlike vs code.
-        # this enables django to find your global templates file
+        # this enables django to find the global templates file
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
